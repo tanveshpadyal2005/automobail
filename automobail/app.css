@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.application{
+    width: 100%;
+    height: auto;
+    padding: 1% 3%;
+    background: url("https://img.freepik.com/free-photo/technologist-with-grey-tablet-his-hands-make-set-up-production-line-while-standing-department-dairy-factory_645730-697.jpg?w=996&t=st=1701457010~exp=1701457610~hmac=23d9e1f43fcddd4297d6c153ffb95a4484347c746e66d3b327125a91c39fc981");
+}
+
+
+.app-titel{
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.app-titel h1{
+    /* font-family: 'Playfair Display', serif; */
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.app-titel p{
+   color: #bf7821;
+   font-weight: 500;
+   
+}
+
+
+.app-images{
+    width: 100%;
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 3rem;
+    padding: 5% 2%;
+    background-color: rgb(52, 52, 52);
+}
+
+.app-img{
+    width: 26rem;
+    height: 25rem;
+    background-color: rgb(255, 255, 255);
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.app-img:hover .app-text{
+    bottom: 0;
+}
+
+.app-img:hover .appname{
+    background-color: #c9740d;
+    transition: all 1s ease;
+    top: -100%;
+}
+
+.app-img img{
+    width: 100%;
+    height: 100%;
+    position:absolute;
+    object-fit: cover;
+    
+}
+
+.app-text{
+    position: absolute;
+   bottom: -100%;
+   z-index: 200;
+   background-color: white;
+   height: 50%;
+   padding: 20px;
+   transition: all 0.3s ease;
+}
+
+.app-text h3{
+    color: #bf7821;
+    font-size: 23px;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+}
+
+.app-text span{
+    color: gray;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.appname{
+    background-color: #bf7821;
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    color: white;
+    text-align: center;
+    min-height: 20%;
+    display: grid;
+    place-items: center;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 24px;
+    top: 0;
+
+}
+
+
+
+
+
